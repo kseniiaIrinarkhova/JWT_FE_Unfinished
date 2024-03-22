@@ -12,7 +12,7 @@ const UserProvider = ({children}) => {
     const logIn = async (formData) => {
         let res = await axios({
             method: 'POST',
-            url: 'http://localhost:3000/api/auth/login',
+            url: 'https://jwt-verificationbe.onrender.com/api/auth/login',
             data: formData
 
         })
@@ -22,7 +22,7 @@ const UserProvider = ({children}) => {
     const signUp = async (formData) => {
         let res = await axios({
             method: 'POST',
-            url: 'http://localhost:3000/api/users',
+            url: 'https://jwt-verificationbe.onrender.com/api/users',
             data: formData
 
         })
